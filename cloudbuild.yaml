@@ -6,9 +6,9 @@ steps:
     args: [ 'install' ]
 
   # Run Unit tests
-#  - name: node:12.12.0
-#    entrypoint: npm
-#    args: [ 'run', 'test-headless' ]
+  - name: 'gcr.io/avago-home-automation-dev/node-chrome-headless'
+    entrypoint: npm
+    args: [ 'run', 'test-headless' ]
 
   # Build files
   - name: node:12.12.0
