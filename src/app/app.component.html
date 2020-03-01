@@ -1,5 +1,16 @@
-
-
+<mat-toolbar color="primary">
+  <span>Home Temperature</span>
+</mat-toolbar>
 <div id="container">
-  <div>{{message}}</div>
+  <mat-card class="temperature-card">
+    <mat-card-header>
+      <mat-card-title>
+        <fa-icon [icon]="temperatureIcon"></fa-icon>
+        {{temperature}}°C
+      </mat-card-title>
+      <mat-card-subtitle>
+        Living Room
+      </mat-card-subtitle>
+    </mat-card-header>
+  </mat-card>
 </div>

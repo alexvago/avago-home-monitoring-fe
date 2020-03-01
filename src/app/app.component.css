@@ -1,4 +1,14 @@
 #container {
-  background-color: #c9e7e9;
-  font-family: Verdana, sans-serif;
+  margin: 100px auto;
+  max-width: 1024px;
+}
+
+.temperature-card {
+  max-width: 400px;
+}
+
+@media  only screen and (max-width: 600px) {
+  .temperature-card {
+    margin: 0 10px;
+  }
 }
